@@ -20,3 +20,5 @@ To run the application, clone this repository to your local machine and navigate
 `docker build -t flask-app .`
 
 `docker run -p 5000:5000 flask-app`
+
+UI Link: http://13.51.254.214:5000/
