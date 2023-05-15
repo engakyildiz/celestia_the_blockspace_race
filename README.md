@@ -1,5 +1,5 @@
 # celestia_the_blockspace_race
-Celestia Light Node Tasks
+## Celestia Light Node Tasks
 
 In the study, a simple example was created using the Python programming language "pywebio" library and "Flask".
 
