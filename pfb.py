@@ -1,3 +1,5 @@
+#MY NODE ID: 12D3KooWGMx7VZ9tgYAk3GgAcK5p8NE5Y5VgUDTNvB6PY76BHgC4
+
 import flask
 from pywebio.input import *
 from pywebio.output import *
@@ -11,17 +13,17 @@ app = Flask(__name__)
 
 
 def main():
-    img = open('./image/celestia_logo_purple.png', 'rb').read()
+    img = open('./logo.png', 'rb').read()
     put_image(img)
-    put_markdown('# UI for submitting PFB transaction')
+    put_markdown('# UI for Submitting PayForBlob Transactions')
 
-    user_data = input_group("PFB Parameters", [
+    user_data = input_group("PayForBlob Parameters", [
         # radio("Schema", name='schema', options=['http', 'https'], value='http', required=True),
         select('Schema type', name='schema', options=['http', 'https'], value='http', required=True),
-        input('Node IP', name='node_ip', value='135.181.156.190', required=True),
+        input('Node IP', name='node_ip', value='194.163.160.60', required=True),
         input('Port', name='port', value='26659', required=True),
         input('Message', name='data', required=True),
-        input('Namespace Id', name='namespace_id', value='f9585f104d8bb56e', required=True),
+        input('Namespace Id', name='namespace_id', value='0c204d39600fddd3', required=True),
         input('Gas', name='gas_limit', type=NUMBER, value='80000', required=True),
         input('Fee', name='fee', type=NUMBER, value='2000', required=True),
     ])
